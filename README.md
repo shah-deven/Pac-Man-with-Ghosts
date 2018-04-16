@@ -47,3 +47,10 @@ python autograder.py -q q3 --no-graphics <br />
 The correct implementation of alpha-beta pruning will lead to Pacman losing some of the tests. This is not a problem: as it is correct behaviour, it will pass the tests. <br />
 
 # Expectimax
+Minimax and alpha-beta are great, but they both assume that you are playing against an adversary who makes optimal decisions. As anyone who has ever won tic-tac-toe can tell you, this is not always the case. In this case, I implemented the ExpectimaxAgent, which is useful for modeling probabilistic behavior of agents who may make suboptimal choices. To run the test cases, run <br />
+
+python autograder.py -q q4 <br />
+
+To see how the ExpectimaxAgent behaves in Pacman, run: <br />
+
+python pacman.py -p ExpectimaxAgent -l minimaxClassic -a depth=3
